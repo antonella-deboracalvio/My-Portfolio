@@ -12,13 +12,13 @@ const Projects = () => {
     {
       title: "Presto",
       description: "Il progetto simula una piattaforma di e-commerce per la vendita di prodotti di seconda mano.",
-      tech: ["React", "Redux", "Node.js", "Socket.io"],
+      tech: ["Laravel", "MySql"],
       image: Presto,
     },
     {
       title: "GameFrame",
-      description: "Applicazione meteo con geolocalizzazione e previsioni dettagliate a 7 giorni.",
-      tech: ["React", "OpenWeather API", "Styled-Components"],
+      description: "Il sito è dedicato agli appassionati di videogiochi, offrendo una vasta selezione di giochi",
+      tech: ["React", "Supabase"],
       image: GameFrame,
     }
   ];

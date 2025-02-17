@@ -2,13 +2,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaInstagram, FaAward } from 'react-icons/fa';
+import { FaGithub, FaLinkedin,FaAward } from 'react-icons/fa';
 
 const CertificationsSocial = () => {
   const socials = [
-    { icon: FaGithub, link: "#", name: "GitHub" },
-    { icon: FaLinkedin, link: "#", name: "LinkedIn" },
-    { icon: FaInstagram, link: "#", name: "Instagram" }
+    { icon: FaGithub, link: "https://github.com/antonella-deboracalvio", name: "GitHub" },
+    { icon: FaLinkedin, link: "https://www.linkedin.com/in/debora-calvio-a51104315/", name: "LinkedIn" },
   ];
 
   return (
