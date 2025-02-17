@@ -1,0 +1,134 @@
+/* styles/Projects.css */
+.projects-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+.project-card {
+  width: 50%;
+  max-width: 400px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.607);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+  height: auto; /* <-- Importante! */
+}
+
+.project-image {
+  position: relative;
+  width: 100%;
+  height: auto; /* Permette il ridimensionamento naturale */
+  max-height: 300px; /* Imposta un'altezza massima per mantenere il layout pulito */
+  display: flex; /* Per centrare l'immagine */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;  /* Fa sì che l'immagine si adatti alla larghezza */
+  height: 100%; /* Si assicura che riempia il contenitore */
+  object-fit: cover; /* Mantiene proporzioni corrette */
+  object-position: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-links {
+  opacity: 1;
+}
+
+.project-link {
+  color: white;
+  font-size: 24px;
+  transition: transform 0.2s ease;
+}
+
+.project-link:hover {
+  transform: scale(1.2);
+  color: #E31B6D;
+}
+
+.project-info {
+  padding: 1.5rem;
+}
+
+.project-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.project-info p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
+  background: linear-gradient(45deg, #0A66C2, #E31B6D);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 1024px) { /* Tablet */
+  .project-card {
+    max-width: 90%;
+  }
+
+  .project-image {
+    aspect-ratio: 16/9;
+  }
+
+  .project-info {
+    padding: 1rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    max-width: 100%;
+    overflow-y: hidden;
+  }
+
+  .project-image {
+    max-height: 250px; /* Imposta una dimensione più piccola per il mobile */
+    overflow-y: hidden  ;
+  }
+}
+

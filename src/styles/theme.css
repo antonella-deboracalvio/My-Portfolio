@@ -1,0 +1,117 @@
+/* styles/theme.css */
+:root {
+    /* Light theme variables */
+    --background: #f8f9fa;
+    --text-primary: #333;
+    --text-secondary: #666;
+    --card-bg:#f8f9fa;
+    --nav-bg: rgba(255, 255, 255, 0.95);
+    --border-color: #3c37375a;
+    --shadow-color: rgba(31, 38, 135, 0.15);
+  }
+  
+  [data-theme='dark'] {
+    /* Dark theme variables */
+    --background: #0a0a0a;
+    --text-primary: #fff;
+    --text-secondary: #aaa;
+    --card-bg: rgba(30, 30, 30, 0.7);
+    --nav-bg: rgba(20, 20, 20, 0.95);
+    --border-color: #333;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Theme toggle button styles */
+  .theme-toggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--card-bg);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 10px var(--shadow-color);
+    z-index: 1000;
+  }
+  
+  .theme-icon {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+  }
+  
+  /* Update existing components for dark theme */
+  body {
+    background-color: var(--background);
+    color: var(--text-primary);
+  }
+  
+  .navbar {
+    background-color: var(--nav-bg) !important;
+  }
+  
+  .nav-link {
+    color: var(--text-primary) !important;
+  }
+  
+  .project-card,
+  .certification-card,
+  .contact-card {
+    background: var(--background);
+    border-color: var(--border-color);
+  }
+  
+  .project-info h3,
+  .project-info p {
+    color: var(--text-primary);
+  }
+  
+  .skills-section,
+  .contact-section{
+    background-color: var(--background);
+  }
+
+ 
+  
+  .skill-item {
+    background: var(--background)
+  }
+  
+  .form-control{
+    background: var(--card-bg);
+    color: var(--text-primary);
+    border-color: var(--border-color) !important;
+  }
+
+  .form-control::placeholder {
+    color: var(--text-primary) !important;
+  }
+  
+  .form-control:focus,
+  .contact-input:focus {
+    background: var(--card-bg);
+    color: var(--text-primary);
+  }
+
+  .social-name {
+    color: var(--text-primary);
+  }
+
+  
+  .footer {
+    background-color: var(--background);
+    border-color: var(--border-color);
+  }
+  
+  /* Scrollbar for dark theme */
+  [data-theme='dark'] ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+  
+  [data-theme='dark'] ::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #0A66C2, #E31B6D);
+  }

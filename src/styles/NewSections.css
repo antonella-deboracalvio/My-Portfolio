@@ -1,0 +1,117 @@
+/* styles/NewSections.css */
+/* Certificazioni e Social */
+.certification-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  
+  .gradient-icon {
+    background: linear-gradient(45deg, #0A66C2, #E31B6D);
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    color: var(--text-primary);
+  }
+
+  
+  .social-link:hover {
+    background: linear-gradient(45deg, #0A66C2, #E31B6D);
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .social-name {
+    font-size: 0.9rem;
+  }
+  
+  /* Contatti */
+  /* .contact-section {
+    background-color: #f8f9fa;
+  } */
+  
+  .contact-card {
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+  }
+  
+  .contact-info {
+    background: linear-gradient(45deg, #0A66C2, #E31B6D);
+    color: white;
+    padding: 2rem;
+  }
+  
+  .contact-form {
+    padding: 2rem;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-icon {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .contact-details h4 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .contact-details p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+  
+  .form-control {
+    border: none;
+    padding: 0.8rem;
+  }
+
+  .form-control::placeholder {
+    color: var(--text-primary) !important;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+    border: 1px solid #0A66C2;
+  }
+  
+  .gradient-button {
+    background: linear-gradient(45deg, #0A66C2, #E31B6D);
+    border: none;
+    padding: 0.8rem;
+  }
+  
+  .gradient-button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #fff;
+    border-top: 1px solid #eee;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-info {
+      border-radius: 15px 15px 0 0;
+    }
+    
+    .social-links {
+      flex-wrap: wrap;
+    }
+  }
