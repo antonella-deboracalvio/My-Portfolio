@@ -73,22 +73,19 @@ const Contact = () => {
                     <div className="contact-item">
                       <FaEnvelope className="contact-icon" />
                       <div>
-                        <h4>Email</h4>
                         <p>a.deboracalvio@gmail.com</p>
                       </div>
                     </div>
                     <div className="contact-item">
                       <FaPhone className="contact-icon" />
                       <div>
-                        <h4>Telefono</h4>
                         <p>+39 3297560298</p>
                       </div>
                     </div>
                     <div className="contact-item">
                       <FaMapMarkerAlt className="contact-icon" />
                       <div>
-                        <h4>Località</h4>
-                        <p>Italia</p>
+                        <p>Bari, Italy</p>
                       </div>
                     </div>
                   </div>

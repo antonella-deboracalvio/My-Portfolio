@@ -20,9 +20,9 @@ const Projects = () => {
       description: "Il sito è dedicato agli appassionati di videogiochi, offrendo una vasta selezione di giochi",
       tech: ["React", "Supabase"],
       image: GameFrame,
+      link: "https://debora-calvio-progetto-finale.vercel.app/",
     }
   ];
-  // link: "https://debora-calvio-progetto-finale.vercel.app/"
   return (
     <section id="projects" className="projects-section py-5 mt-5">
       <Container>
